@@ -1,4 +1,4 @@
-﻿# Get ALL services on the system, regardless of whether they are running or stopped
+﻿
 $services = Get-CimInstance -ClassName Win32_Service | 
     Where-Object { $_.PathName -notlike "*C:\Windows\*" }
 
